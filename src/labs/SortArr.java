@@ -8,11 +8,15 @@ import java.util.Arrays;
     public class SortArr{
         public static void main(String []arg) {
             int[] numbers = new int[]{1, 23, 3, 8, 2, 7, 4};
-
-            for(int i = 0; i < numbers.length; i++)
+            int max = numbers[0];
+            for(int i = 0; i < numbers.length; i++){
             //Arrays.sort(numbers);
-            {
-                System.out.println(numbers[i]);
+                if (numbers[i]>max){
+                    max = numbers[i];
+
+                }
+
+                System.out.println(max);
             }
 
         }
